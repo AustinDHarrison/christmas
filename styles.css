@@ -3,6 +3,13 @@ body{
     background-color: #030022!important;
 }
 
+/* desktop only style */
+@media (min-width: 768px) {
+  *{
+    overflow: hidden;
+  }
+}
+
 @keyframes fall {
     100% {
       top: 100vh;
@@ -34,6 +41,7 @@ body{
     width: 100%;
   }
   .snow {
+    margin-right: 2rem;
     animation: fall ease-in infinite, sway ease-in-out infinite;
     color: skyblue;
     background-color: #ffffff;

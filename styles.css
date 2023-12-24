@@ -2,19 +2,8 @@
 body{
     background-color: #030022!important;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 @keyframes fall {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
     100% {
       top: 100vh;
       opacity: 1;
@@ -39,8 +28,7 @@ body{
   }
   #snow-container {  
     height: 100vh;
-    overflow: hidden;
-    position: absolute;
+    overflow-x: hidden;
     top: 0;
     transition: opacity 500ms;
     width: 100%;
